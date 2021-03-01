@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratique 01</title>
+    <script>
+        nom = "Vilain";
+        prénom = "Guy";
+        langue = "fr";
+
+        function afficher(){
+                let tmp = "";
+                if (langue=="fr") tmp="Bonjour";
+                else if (langue=="en") tmp="Hello";
+                alert(tmp + " " + prénom + " " + nom + " !");
+            } 
+     </script> 
+</head>
+<body>
+    <p>
+        <a href="#" onclick="afficher()">hello</a>
+         -
+        <a href="#" onclick="langue='fr'">français</a>
+         -
+        <a href="#" onclick="langue='en'">anglais</a>
+      </p>
+    </body>
+</body>
+</html>

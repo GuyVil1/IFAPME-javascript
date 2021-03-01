@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function defineLinks()
+            {
+                var links = document.getElementsByTagName("a");
+                for (var i=0; i<links.length; i++)
+                    {
+                     links.item(i).onclick =  function() { return confirm('êtes-vous sûr ?'); };
+                    }
+            }
+    </script>
+</head>
+<body onload="defineLinks()">
+    <p>Visitez le site du <a href="http://www.lesoir.be/">journal Le Soir</a>.</p>
+</body>

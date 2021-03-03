@@ -1,7 +1,7 @@
 function afficherDate1(){
    let d = new Date();
    let date  = d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear();
-   document.write("<p>Nous sommes le "+date+".</p>");            
+   document.write("<p>Nous sommes le " + date + ".</p>");            
 }
 
 function afficherDate2(){

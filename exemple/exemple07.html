@@ -11,9 +11,9 @@
   
         function changerLangue(langue){
            let div = document.getElementById("texte");
-           while (div.firstChild){
-               div.removeChild(div.firstChild);
-           } 
+        //    while (div.firstChild){
+        //        div.removeChild(div.firstChild);
+        //    } 
            if (langue=="fr"){
                div.appendChild(document.createTextNode(textFR));
            } 
@@ -24,7 +24,10 @@
     </script>
 </head>
 <body onload="changerLangue('en')">
-      <div id="texte"></div>
+      <div id="texte">
+
+        
+      </div>
       <br></br>
       <p>
         <a href="javascript:changerLangue('fr')">français</a> - 

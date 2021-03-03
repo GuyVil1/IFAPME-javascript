@@ -23,7 +23,7 @@ prompt("Quel âge avez-vous?");
 //Je peux stocker l'information de l'utilisateur dans une variable pour l'utiliser plus tard
 //dans mon programme:
 
-const âge = prompt("Quel âge avez-vous?");
+let âge = prompt("Quel âge avez-vous?");
 document.write("<h2>Vous avez " + âge + "ans!</h2>");
 document.write(`<h3>Vous avez ${âge} ans`);
 

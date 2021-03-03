@@ -17,17 +17,19 @@ function salutation(prénom, nom){
 
 //appel de ma fonction
 salutation('Guy', 'Vilain');
+salutation('Maximilien', "Coulon");
+
 
 //Je peux utiliser les paramètres pour effectuer des opérations
 function addition(n1, n2){
-    let resultat = n1 + n2;
+    let resultat = n1 + n2;//locale
     console.log(`Le résultat de ${n1}+${n2}= ${resultat}`);
 }
 
 addition(12, 28);
+addition(120, 360);
 
 console.log("******************************************************")
-
 
 /*********************
 ****   PARTIE 3   ****
@@ -85,7 +87,7 @@ function cuisiner(nbrGateaux, tmpPreparation = 10, tmpCuisson = 15){
     return resultat;
 }
 //Pour cuisiner mes 5 gâteau, je ferai
-console.log("Pour cuisiner 4 gâteaux, j'ai besoin de " + cuisiner(5) + "minutes");
+console.log("Pour cuisiner 5 gâteaux, j'ai besoin de " + cuisiner(5) + "minutes");
 
 //Si j'ai plusieurs gâteaux différents...
 let tmpsGateau = cuisiner(10), tmpsPrepaFraisier = cuisiner(2, 25);
@@ -93,6 +95,7 @@ let tmpsGateau = cuisiner(10), tmpsPrepaFraisier = cuisiner(2, 25);
 console.log("Pour cuisiner 10 gâteaux, et 2 fraisiers j'ai besoin de " + (tmpsGateau + tmpsPrepaFraisier) + "minutes");
 
 console.log("******************************************************")
+
 
 /*********************
 ****   PARTIE 5   ****
@@ -123,18 +126,23 @@ console.log(cris2);//La modification de ma variable s'applique même en dehors d
 
 console.log("******************************************************")
 
-let variableLet = "globale";
-var variableVar = "globale";
+let variableLet = "globale";//variable globale en let
+var variableVar = "globale";//Variable globale en var
+
+console.log(variableLet);
+console.log(variableVar);
 
 if(true) {
   
-  let variableLet = "locale";
-  var variableVar = "locale";
+  let variableLet = "locale";//variable locale en let
+  var variableVar = "locale";//Variable locale en var
   
-  console.log("let : " + variableLet);
-  console.log("var : " + variableVar);
+  console.log("let : " + variableLet);//locale
+  console.log("var : " + variableVar);//locale
   
 }
 
-console.log("let : " + variableLet);
-console.log("var : " + variableVar);
+
+console.log("let : " + variableLet);//Globale
+console.log("var : " + variableVar);//Locale -> ma variable à été impactée par ma condition, on évitera au maximum d'utiliser un var
+

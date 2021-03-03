@@ -6,18 +6,6 @@ const prénom = 'Guy';//Je crée une variable a qui j'attribue une valeur string
 
 //J'affiche dans la console le contenu de ma variable:
 console.log(prénom);
-
-
-
-
-
-
-
-
-
-
-
-
 //Je crée une autre variable dans laquelle je concatène une chaine de caractère
 //avec la chaine de caractère contenu dans ma variable précédente.
 let salutation = 'Bonjour ' + prénom; 
@@ -25,13 +13,7 @@ let salutation = 'Bonjour ' + prénom;
 //J'affiche dans la console le contenu de ma variable avec un petit texte juste avant:
 console.log("Mais qui voilà ???\n" + salutation);
 
-
-
-
-
-
-
-
+console.log("*****************************\n\n");
 
 //Autre chaine de caractère
 const rencontre = 'Je suis vraiment heureux de te rencontrer'
@@ -40,15 +22,7 @@ const rencontre = 'Je suis vraiment heureux de te rencontrer'
 //Grâve pour délimiter le contenu à afficher, je remplace la concaténation par un ${nomDeMaVariable}:
 console.log(`Mais qui voilà??? ${salutation},\n ${rencontre}`);
 
-
-
-
-
-
-
-
-
-
+console.log("*****************************\n\n");
 
 
 /******************

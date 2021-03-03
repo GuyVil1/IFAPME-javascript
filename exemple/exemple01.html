@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        // Je crée une fonction qui va definir un code js sur mes balise hypperliens (<a>)
         function defineLinks()
             {
-                var links = document.getElementsByTagName("a");
-                for (var i=0; i<links.length; i++)
-                    {
+                //
+                const links = document.getElementsByTagName("a");
+                for (var i=0; i < links.length ; i++){
                      links.item(i).onclick =  function() { return confirm('êtes-vous sûr ?'); };
-                    }
+                }
             }
+
     </script>
 </head>
-<body onload="defineLinks()">
+<body>
     <p>Visitez le site du <a href="http://www.lesoir.be/">journal Le Soir</a>.</p>
 </body>

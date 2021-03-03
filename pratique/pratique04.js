@@ -1,10 +1,8 @@
-function changeHeure()
-{
-var span = document.getElementById("horloge");
-if (span==null) return; 
-while (span.firstChild) span.removeChild(span.firstChild); 
-refresh();
-setTimeout(changeHeure, 1000);
+function changeHeure(){
+    var span = document.getElementById("horloge");
+    while (span.firstChild) span.removeChild(span.firstChild); 
+    refresh();
+    setTimeout(changeHeure, 1000);
 }
 
 
@@ -50,14 +48,14 @@ function refresh(){
     setTimeout(()=>{
         //Si mon boolean est faux, je fais disparaitre mes séparateurs
         if(bool === false){
-            separateur1.setAttribute("style", "opacity: 0");
+            // separateur1.setAttribute("style", "opacity: 0");
             separateur2.setAttribute("style", "opacity: 0");
             //Je modifie mon boolean
             bool = true;
             console.log("recoucou");
         } else {
         //Si mon boolean est true, je fais apparaître mes séparateurs
-            separateur1.setAttribute("style", "opacity: 1");
+            // separateur1.setAttribute("style", "opacity: 1");
             separateur2.setAttribute("style", "opacity: 1");
             bool = false;
         //Je modifie mon boolean

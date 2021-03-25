@@ -32,7 +32,6 @@ function checkVictory(mot, réponse){
 
         if(score == mot.length) console.log("gagné");
     }
-
 }
 
 arraySolution(mot)

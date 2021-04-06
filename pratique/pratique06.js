@@ -24,7 +24,7 @@ menu.style.backgroundColor = '#f1d6ab';
 menu.style.padding = '1em';
 
 //8 contenu de ma section
-menu.innerHTML = '<p><a href="#">Acceuil </a> /  <a href="#"> Une autre page</p>';
+menu.innerHTML = '<p><a href="#">Acceuil </a> /  <a href="#"> Une autre page</a></p>';
 
 //9. injecter contenu sur la page
 document.body.append(menu);
